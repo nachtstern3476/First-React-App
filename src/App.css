@@ -1,38 +1,99 @@
 .App {
-  text-align: center;
+  width: 80%;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-foto {
+  float: left;
+  width: 50%;
+  height: 700px;
+  background: #e3e9ee;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App-deskripsi {
+  width: 40%;
+  overflow: hidden;
+  float: left;
+  margin-left: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.App-deskripsi .info {
+  line-height: 1.8;
+  color: rgb(18, 11, 49);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-deskripsi .price {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.App-deskripsi .title {
+  margin: 0;
+}
+
+.App-deskripsi .category {
+  color: #acaeb2;
+}
+
+.App-deskripsi a {
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 500;
+  background: rgb(255, 159, 159);
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  border-radius: 4px;
+  transition: all 0.8s;
+}
+
+.App-deskripsi a:hover {
+  color: #fff;
+  background: rgb(221, 135, 135);
+  transition: all 0.8s;
+}
+
+.App-review-box {
+  clear: both;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
+
+.App-review-box h2 {
+  margin-top: 50px;
+}
+
+.App-review-box img {
+  width: 80px;
+  height: 80px;
+  background: #b1b1b1;
+  border-radius: 11px;
+  float: left;
+  margin-right: 16px;
+}
+
+.App-review-box .review p,
+h3 {
+  margin: 0;
+}
+
+.App-review-box .review h3 {
+  padding-top: 10px;
+  margin-bottom: 8px;
+}
+
+.App-review-box .item {
+  width: 80%;
+  overflow: hidden;
+  margin-bottom: 24px;
 }
